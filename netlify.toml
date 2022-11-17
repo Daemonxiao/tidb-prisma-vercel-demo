@@ -1,6 +1,6 @@
 [build]
-command = "yarn build"
-publish = "pages/"
+command = "yarn && yarn build"
+publish = ".next"
 
 [template.environment]
 DATABASE_URL = "Database URL, leave blank for now. See docs for more info."
