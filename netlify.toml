@@ -3,8 +3,8 @@
     functions = "netlify/functions"
     publish = ".next"
 
-[build.environment]
-DATABASE_URL = "Filled with your TiDB database url, or you can set it later."
+#[build.environment]
+#DATABASE_URL = "Filled with your TiDB database url, or you can set it later."
 
 [template.environment]
-    DATABASE_URL = "Filled with your TiDB database url, or you can set it later."
+DATABASE_URL = "Filled with your TiDB database url, or you can set it later."
