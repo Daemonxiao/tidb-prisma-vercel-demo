@@ -8,7 +8,7 @@
     "setup": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/setup.mjs",
     "start": "next start",
     "vercel-build": "export DATABASE_URL=$(node ./scripts/env.mjs) && yarn run prisma:deploy && yarn run setup && yarn run build",
-    "netlify-build": "export DATABASE_URL=$(node ./scripts/env.mjs) && yarn run prisma:deploy && yarn run setup && yarn run build"
+    "netlify-build": "if [[ \"$DATABASE_URL\" -ne \"\" ]]; then export DATABASE_URL=$(node ./scripts/env.mjs) && yarn run prisma:deploy && yarn run setup && yarn run build; fi"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
