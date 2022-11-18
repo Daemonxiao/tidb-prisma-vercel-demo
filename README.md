@@ -4,17 +4,17 @@ Bookshop is a virtual online bookstore application through which you can find bo
 
 You can perform CRUD operations such as viewing book details, adding and deleting ratings, editing book inventory, etc.
 
-> Powered by TiDB Cloud, Prisma and Vercel.
-
 ## 🔥 Visit Live Demo
 
-[👉 Click here to visit](https://tidb-prisma-vercel-demo.vercel.app/)
+[👉 Click here to visit demo](https://tidb-prisma-vercel-demo.vercel.app/)
+
+> Powered by TiDB Cloud, Prisma and Vercel.
 
 ![image](https://user-images.githubusercontent.com/56986964/183592978-42d702eb-b5fc-4285-b081-30a50803fe1a.png)
 
 ## Deploy on Vercel
 
-## 🧑‍🍳 Before We Start
+### 🧑‍🍳 Before We Start
 
 Create a [TiDB Cloud](https://tidbcloud.com/) account and get your free trial cluster.
 
@@ -51,9 +51,31 @@ Your `DATABASE_URL` should look like `mysql://<User>:<Password>@<Host>:4000/book
 
 </details>
 
-# Deploy on Netlify
+## Deploy on Netlify
+
+### 🧑‍🍳 Before We Start
+
+1. Create a [TiDB Cloud](https://tidbcloud.com/) account and get your free trial cluster.
+2. Create a [Netlify](https://app.netlify.com/signup) account.
+
+### 1. Get connection details
+
+1. Navigate to your TiDB Serverless cluster's dashboard.
+2. Get **Endpoint**, **Port** and **User** field from the Connection tab.
+3. Build your **DATABASE_URL**: `mysql://<User>:<Password>@<Endpoint>:<Port>/bookshop`
+
+![image](https://user-images.githubusercontent.com/35677990/202609001-ecf07f3d-a7a3-4376-9b7d-54f4096aaec6.jpg)
+
+You will use this DATABASE_URL string to connect to TiDB Serverless cluster later.
+
+### 2. Deploy on Netlify
+
+The **Deploy to Netlify** button will take you Netlify's deployment page. Then Netlify will help to clone this job to your own GitHub repository and automatically deploy it.
 
 [![Deploy to Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Daemonxiao/tidb-prisma-vercel-demo)
+
+1. Click the **Deploy to Netlify** button.
+2. 
 
 ## 📖 Development Reference
 
