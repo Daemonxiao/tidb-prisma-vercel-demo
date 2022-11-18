@@ -72,10 +72,13 @@ You will use this DATABASE_URL string to connect to TiDB Serverless cluster late
 
 The **Deploy to Netlify** button will take you Netlify's deployment page. Then Netlify will help to clone this job to your own GitHub repository and automatically deploy it.
 
-[![Deploy to Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Daemonxiao/tidb-prisma-vercel-demo)
+[![Deploy to Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Daemonxiao/tidb-prisma-vercel-demo#DATABASE_URL=%fake_url%)
 
 1. Click the **Deploy to Netlify** button.
-2. 
+2. Click **Connect to GitHub**.
+3. Fill in **Repository name** used to store the clone code.
+4. Fill in **DATABASE_URL** that you get from previous step.
+5. Click **Save & Deploy**
 
 ## 📖 Development Reference
 
