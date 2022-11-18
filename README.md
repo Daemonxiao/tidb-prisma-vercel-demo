@@ -72,13 +72,21 @@ You will use this DATABASE_URL string to connect to TiDB Serverless cluster late
 
 The **Deploy to Netlify** button will take you Netlify's deployment page. Then Netlify will help to clone this job to your own GitHub repository and automatically deploy it.
 
-[![Deploy to Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Daemonxiao/tidb-prisma-vercel-demo#DATABASE_URL=%fake_url%)
+[![Deploy to Netlify button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Daemonxiao/tidb-prisma-vercel-demo)
 
 1. Click the **Deploy to Netlify** button.
-2. Click **Connect to GitHub**.
-3. Fill in **Repository name** used to store the clone code.
-4. Fill in **DATABASE_URL** that you get from previous step.
-5. Click **Save & Deploy**
+2. Click **Connect to GitHub** and authenticate GitHub account.
+3. Fill in **Repository name** for your own GitHub repository.
+4. Click **Save & Deploy**.
+   ![image](https://user-images.githubusercontent.com/35677990/202630299-ba4802b6-8535-486d-b767-c6ef0acc01a8.jpg)
+5. Navigate to **Site setting** panel.
+6. Click **Add a variable** in the **Environment variables** sidebar.
+   ![image](https://user-images.githubusercontent.com/35677990/202631704-6e463edf-7a2e-4cce-a9c7-98853167424f.jpg)
+7. Enter "DATABASE_URL" in the **Key** field.
+8. Enter the DATABASE_URL string, set in the previous step, in the **Values** field.
+9. Click **Create variable** to complete adding environment variable.
+   ![image](https://user-images.githubusercontent.com/35677990/202632393-8a2e5f56-5b04-4585-931b-34a836e7df37.jpg)
+10. 
 
 ## 📖 Development Reference
 
